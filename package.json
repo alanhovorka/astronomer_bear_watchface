@@ -1,0 +1,28 @@
+{
+    "author": "alanhovorka94@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "astronomer-bear",
+    "pebble": {
+        "displayName": "Astronomer Bear Watchface",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite",
+            "emery"
+        ],
+        "uuid": "51478a99-2bff-4ff8-9c3a-bad0d4a937ec",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
