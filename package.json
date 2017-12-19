@@ -4,6 +4,9 @@
     "keywords": [],
     "name": "astronomer-bear",
     "pebble": {
+        "capabilities": [
+            "location"
+        ],
         "displayName": "Astronomer Bear Watchface",
         "enableMultiJS": true,
         "messageKeys": [],
