@@ -1,5 +1,5 @@
 # Astronomer Bear Watchface for Pebble watches
-Astronomer Bear thinks he knows the secrets of time and space. He delivers them to your Pebble every hour on the hour. 
+Astronomer Bear thinks he knows the secrets of time and space. He delivers them to your Pebble every hour on the hour. **This is a WIP**
 
 
 * Astronomer Bear illustration by [Stacie Kammerling](https://www.staciekammerling.com/). Her [Twitter](https://twitter.com/Stacie_kam). 
