@@ -12,7 +12,20 @@
         "messageKeys": [],
         "projectType": "native",
         "resources": {
-            "media": []
+            "media": [
+                {
+                    "file": "fonts/RobotoMono-Regular.ttf",
+                    "name": "ROBOTO_REG_48",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/RobotoMono-Medium.ttf",
+                    "name": "ROBOTO_MEDIUM_48",
+                    "targetPlatforms": null,
+                    "type": "font"
+                }
+            ]
         },
         "sdkVersion": "3",
         "targetPlatforms": [
