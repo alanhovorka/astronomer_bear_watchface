@@ -30,11 +30,12 @@ static void main_window_load(Window *window) {
   GRect bounds = layer_get_bounds(window_layer);
 
   // Create the TextLayer with specific bounds
+  //0, 50 = default center of watch
   s_time_layer = text_layer_create(
       GRect(0, PBL_IF_ROUND_ELSE(58, 52), bounds.size.w, 50));
 
   // Create GFont
-  s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_ROBOTO_REG_48));
+  s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_ROBOTO_REG_42));
 
   // Improve the layout to be more like a watchface
   text_layer_set_background_color(s_time_layer, GColorClear);
