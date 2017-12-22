@@ -9,7 +9,10 @@
         ],
         "displayName": "Astronomer Bear Watchface",
         "enableMultiJS": true,
-        "messageKeys": [],
+        "messageKeys": [
+            "TEMPERATURE",
+            "CONDITIONS"
+        ],
         "projectType": "native",
         "resources": {
             "media": [

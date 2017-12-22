@@ -9,6 +9,7 @@ Pebble.addEventListener('ready',
 Pebble.addEventListener('appmessage',
   function(e) {
     console.log('AppMessage received!');
+    getWeather();
   }                     
 );
 
@@ -47,6 +48,9 @@ var xhrRequest = function (url, type, callback) {
   xhr.send();
 };
 
+var loadConfig = require('./config.js');
+var myAPIKey = loadConfig.weatherKey;
+
 function locationSuccess(pos) {
   // Construct URL
   var url = 'http://api.openweathermap.org/data/2.5/weather?lat=' +
@@ -68,3 +72,19 @@ function locationSuccess(pos) {
     }      
   );
 }
+
+// Assemble dictionary using our keys
+var dictionary = {
+  'TEMPERATURE': temperature,
+  'CONDITIONS': conditions
+};
+
+// Send to Pebble
+Pebble.sendAppMessage(dictionary,
+  function(e) {
+    console.log('Weather info sent to Pebble successfully');
+  },
+  function(e) {
+    console.log('Error sending weather info to Pebble');
+  }
+);
